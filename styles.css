@@ -1,0 +1,200 @@
+/* DevEco Code Plugin Styles */
+
+.deveco-code-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.deveco-code-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--background-modifier-border);
+  background-color: var(--background-secondary);
+  flex-shrink: 0;
+}
+
+.deveco-code-header-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.deveco-code-header-title svg {
+  width: 16px;
+  height: 16px;
+}
+
+.deveco-code-header-actions {
+  display: flex;
+  gap: 4px;
+}
+
+.deveco-code-header-actions button {
+  background: transparent;
+  border: none;
+  padding: 4px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--text-muted);
+}
+
+.deveco-code-header-actions button:hover {
+  background-color: var(--background-modifier-hover);
+  color: var(--text-normal);
+}
+
+.deveco-code-header-actions button svg {
+  width: 16px;
+  height: 16px;
+}
+
+.deveco-code-iframe-container {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.deveco-code-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: var(--background-primary);
+}
+
+.deveco-code-status-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 24px;
+  text-align: center;
+  gap: 16px;
+}
+
+.deveco-code-status-icon {
+  width: 48px;
+  height: 48px;
+  color: var(--text-muted);
+}
+
+.deveco-code-status-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.deveco-code-status-container h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.deveco-code-status-message {
+  color: var(--text-muted);
+  max-width: 300px;
+  margin: 0;
+}
+
+.deveco-code-status-container button {
+  margin-top: 8px;
+}
+
+.deveco-code-status-container button + button {
+  margin-left: 8px;
+}
+
+.deveco-code-status-container.deveco-code-error .deveco-code-status-icon {
+  color: var(--text-error);
+}
+
+.deveco-code-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.deveco-code-spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid var(--background-modifier-border);
+  border-top-color: var(--interactive-accent);
+  border-radius: 50%;
+  animation: deveco-code-spin 1s linear infinite;
+}
+
+@keyframes deveco-code-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.deveco-code-settings-status {
+  margin-top: 12px;
+  padding: 12px;
+  background-color: var(--background-secondary);
+  border-radius: 8px;
+}
+
+.deveco-code-status-line {
+  margin-bottom: 8px;
+}
+
+.deveco-code-status-line a {
+  color: var(--text-accent);
+}
+
+.deveco-code-status-badge {
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.85em;
+  font-weight: 500;
+}
+
+.deveco-code-status-badge.status-stopped {
+  background-color: var(--background-modifier-border);
+  color: var(--text-muted);
+}
+
+.deveco-code-status-badge.status-starting {
+  background-color: var(--text-warning);
+  color: var(--background-primary);
+}
+
+.deveco-code-status-badge.status-running {
+  background-color: var(--text-success);
+  color: var(--background-primary);
+}
+
+.deveco-code-status-badge.status-error {
+  background-color: var(--text-error);
+  color: var(--background-primary);
+}
+
+.deveco-code-settings-buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.deveco-code-status-waiting {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.deveco-code-error-details {
+  margin-top: 12px;
+  padding: 10px 12px;
+  background-color: var(--background-secondary);
+  border-radius: 6px;
+  border-left: 3px solid var(--text-error);
+}
+
+.deveco-code-error-text {
+  color: var(--text-error);
+  font-size: 0.9em;
+  line-height: 1.4;
+}

@@ -1,0 +1,9 @@
+{
+  "id": "deveco-code-obsidian",
+  "name": "DevEco Code Obsidian",
+  "version": "0.1.0",
+  "minAppVersion": "1.4.0",
+  "description": "Embed DevEco Code AI assistant in Obsidian for HarmonyOS development",
+  "author": "Carsmallguo",
+  "isDesktopOnly": true
+}

@@ -1,0 +1,28 @@
+{
+  "name": "deveco-code-obsidian",
+  "version": "0.1.0",
+  "description": "Embed DevEco Code AI assistant in Obsidian for HarmonyOS development",
+  "main": "main.js",
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
+    "test": "echo \"No tests yet\""
+  },
+  "keywords": [
+    "obsidian",
+    "deveco-code",
+    "harmonyos",
+    "ai",
+    "assistant"
+  ],
+  "author": "Carsmallguo",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "builtin-modules": "^3.3.0",
+    "esbuild": "^0.21.5",
+    "obsidian": "latest",
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.5"
+  }
+}
