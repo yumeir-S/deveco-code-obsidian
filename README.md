@@ -2,7 +2,6 @@
 
 > Embed DevEco Code AI assistant directly in Obsidian — give your notes AI superpowers.
 
-![DevEco Code embedded in Obsidian](./docs/screenshot.png)
 
 ## Inspiration
 
