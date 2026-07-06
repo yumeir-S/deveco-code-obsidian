@@ -2,7 +2,6 @@
 
 > Embed DevEco Code AI assistant directly in Obsidian — give your notes AI superpowers.
 
-
 ## Inspiration
 
 This project is inspired by and borrows from the excellent [opencode-obsidian](https://github.com/mtymek/opencode-obsidian) project by [@mtymek](https://github.com/mtymek). The core idea of embedding an AI CLI assistant via WebView into Obsidian originated there. This plugin adapts that approach for the DevEco Code ecosystem.
@@ -31,7 +30,7 @@ This plugin embeds DevEco Code's web view directly into the Obsidian window. Rat
 
 1. Install the **BRAT** plugin from Obsidian Community Plugins
 2. Open BRAT settings → **Add Beta plugin**
-3. Enter: `your-username/deveco-code-obsidian`
+3. Enter: `yumeir-S/deveco-code-obsidian`
 4. Click **Add Plugin** — BRAT will install the latest release automatically
 5. Enable the plugin in **Obsidian Settings → Community Plugins**
 
@@ -41,7 +40,7 @@ BRAT will automatically check for updates and notify you when new versions are a
 
 ```bash
 # Clone into your vault's plugins directory
-git clone https://github.com/your-username/deveco-code-obsidian.git .obsidian/plugins/deveco-code-obsidian
+git clone https://github.com/yumeir-S/deveco-code-obsidian.git .obsidian/plugins/deveco-code-obsidian
 
 # Install dependencies and build
 bun install && bun run build
